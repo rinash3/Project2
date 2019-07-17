@@ -1,24 +1,39 @@
 var db = require("../models");
 
 module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+  //  for display page to shoe data
+  app.get("/api/buddies", function(req, res) {
+    db.Buddies.findAll({}).then(function(result) {
+      res.json(result);
     });
   });
 
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+  // for adding new person
+  app.post("/api/buddies", function(req, res) {
+    db.Buddies.create(req.body).then(function(result) {
+      res.json(result);
     });
   });
 
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
+  // for display a particular person on the profile page
+  app.get("/api/buddies/:id", function(req, res) {
+    db.Buddies.findOne({
+      where: {
+        id: req.params.id
+      }
+    }).then(function(result) {
+      console.log(result);
+      res.json(result);
+    });
+  });
+
+  app.put("/api/posts", function(req, res) {
+    db.Buddies.update(req.body, {
+      where: {
+        id: req.body.id
+      }
+    }).then(function(result) {
+      res.json(result);
     });
   });
 };
