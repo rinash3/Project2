@@ -27,7 +27,7 @@ module.exports = function(app) {
     });
   });
 
-  app.put("/api/posts", function(req, res) {
+  app.put("/api/buddies", function(req, res) {
     db.Buddies.update(req.body, {
       where: {
         id: req.body.id
