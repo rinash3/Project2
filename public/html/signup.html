@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flocker sign-up</title>
+    <link href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" rel="stylesheet">
+    </link>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    </link>
+    <link rel="stylesheet" href="../styles/styles.css">
+    </link>
+    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-bar">
+        <img class="logo" src="../icons/logo.png">
+    </div>
+    <div class="container">
+        <br><br><br>
+        <div class="row top-space">
+            <br>
+            <div class="col-sm">
+                <h2 class="text-center">5 Steps to find your partner for next trip!</h2>
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm">
+                <img class="steps-intro" src="../icons/1.png">
+            </div>
+            <div class="col-sm">
+                <img class="steps-intro" src="../icons/2.png">
+            </div>
+            <div class="col-sm">
+                <img class="steps-intro" src="../icons/3.png">
+            </div>
+            <div class="col-sm">
+                <img class="steps-intro" src="../icons/4.png">
+            </div>
+            <div class="col-sm">
+                <img class="steps-intro" src="../icons/5.png">
+            </div>
+            <br>
+        </div>
+
+        <div class="row top-space">
+            <h2 class="blue">1. Upload your picture</h2>
+        </div>
+        <div class="row">
+            imagebox
+            <input type="file" class="filepond" name="filepond" data-max-file-size="3MB">
+        </div>
+
+        <form>
+            <hr>
+            <h2 class="blue">2. Tell us about you</h2>
+
+            <div class="form-group">
+                <label class="shorter-input">
+                    <h3>How old are you?*<h3>
+                </label>
+                <input type="number" class="form-control" id="number">
+            </div>
+            <div class="form-group">
+                <label>
+                    <h3>Where are you from?*<h3>
+                </label>
+                <input type="text" class="form-control" id="" placeholder="ex. New York, US">
+            </div>
+            <div class="form-group">
+                <label>
+                    <h3>What languages do you speak?<h3>
+                </label>
+                <input type="text" class="form-control" id="" placeholder="ex. English, Hebrew">
+            </div>
+
+            <div class="form-group">
+                <h3>What's your gender?*<h3>
+                        <select class="form-control shorter-input">
+                            <option>select your gender</option>
+                            <option>Female</option>
+                            <option>Male</option>
+                            <option>Other</option>
+                        </select>
+            </div>
+
+            <div class="form-group">
+                <h3>Diet preference?<h3>
+                        <select class="form-control shorter-input">
+                            <option>select your diet</option>
+                            <option>omnivore</option>
+                            <option>Vegetarian</option>
+                            <option>vegan</option>
+                            <option>koshor</option>
+                            <option>halal</option>
+                        </select>
+            </div>
+
+            <hr>
+            <h2 class="blue">3. Let your potential trip partner knows more about you</h2>
+            <div class="form-group">
+                <label for="aboutMe">
+                    <h3>About me</h3>
+                </label>
+                <textarea class="form-control" id="aboutMe" rows="3"
+                    placeholder="ex. I am a senior year student major in computer science love reading books and I have read every single books of Murahara"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="aboutMe">
+                    <h3>Any past travel experience?</h3>
+                </label>
+                <textarea class="form-control" id="aboutMe" rows="3"
+                    placeholder="ex. I have been to Mexico, Iceland, Maldives, Japan and most of countries in Latin American. I usually travel for a month an deeply experience the culture."></textarea>
+            </div>
+
+            <hr>
+            <h2 class="blue">4. Your trip preferences</h2>
+
+            <div class="form-group">
+
+                <h3>Tell us about your interests in a trip*</h3>
+                <div class="pretty p-default p-fill">
+                    <input type="checkbox" />
+                    <div class="state p-primary">
+                        <label class="bold">attractions</label>
+                    </div>
+                </div>
+
+
+                <div class="pretty p-default p-fill">
+                    <input type="checkbox" />
+                    <div class="state p-primary">
+                        <label class="bold">museums</label>
+                    </div>
+                </div>
+
+                <div class="pretty p-default p-fill">
+                    <input type="checkbox" />
+                    <div class="state p-primary">
+                        <label class="bold">culture</label>
+                    </div>
+                </div>
+                <br>
+                <div class="pretty p-default p-fill">
+                    <input type="checkbox" />
+                    <div class="state p-primary">
+                        <label class="bold">nature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    </div>
+                </div>
+                <div class="pretty p-default p-fill">
+                    <input type="checkbox" />
+                    <div class="state p-primary">
+                        <label class="bold">food&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    </div>
+                </div>
+
+                <div class="pretty p-default p-fill">
+                    <input type="checkbox" />
+                    <div class="state p-primary">
+                        <label class="bold">other</label>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="form-group">
+                <h3>In general how do you prefer your trip*</h3>
+                <div class="travelerType">
+                    <div class="pretty p-default p-fill">
+                        <input type="checkbox" />
+                        <div class="state p-primary">
+                            <label
+                                class="bold">spontaneous&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        </div>
+                    </div>
+                    <div class="pretty p-default p-fill">
+                        <input type="checkbox" />
+                        <div class="state p-primary">
+                            <label class="bold">well planned</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label>
+                    <h3>Your top 3 destinations?*<span class="black">( at least one is required)</span>
+                        <h3>
+
+                            <input type="text" class="margin-top-10 form-control" id=""
+                                placeholder="ex. Bogota, Colombia">
+
+                            <input type="text" class="margin-top-10 form-control" id="" placeholder="ex. Paris, France">
+
+                            <input type="text" class="margin-top-10 form-control" id=""
+                                placeholder="ex. Tel-aviv, Isreal">
+            </div>
+
+            <hr>
+            <h2 class="blue">5. Let right people find you</h2>
+            <div class="form-group">
+                <label for="aboutMe">
+                    <h3>Whom are you looking for ?</h3>
+                </label>
+                <textarea class="form-control" id="aboutMe" rows="3"
+                    placeholder="ex. I am looking for people to share my hotel room and drink outside at night"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="aboutMe">
+                    <h3>Any must-check when you travel?</h3>
+                </label>
+                <textarea class="form-control" id="aboutMe" rows="3"
+                    placeholder="ex. art gallery, coffee shops"></textarea>
+            </div>
+            <br>
+            <hr>
+            <button type="submit" class="mybtn bottom-space">Submit</button>
+        </form>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $.fn.mutuallyExcludedCheckBoxes = function () {
+            var $checkboxes = this.find("input[type=checkbox]");
+
+            $checkboxes.click(function () {
+                var $this = $(this),
+                    isChecked = $this.prop("checked");
+
+                $checkboxes.prop("checked", false);
+                $this.prop("checked", isChecked);
+            });
+        };
+
+        $(".travelerType").mutuallyExcludedCheckBoxes();
+    </script>
+    <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+    <script src="../js/filepond.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+
+</body>
+
+</html>
