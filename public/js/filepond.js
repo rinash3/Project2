@@ -1,8 +1,5 @@
-var dotenv = require("dotenv");
-dotenv.load();
-
 var fs = require("fs");
-var cloudinary = require("cloudinary").v2;
+var cloudinary = require("cloudinary");
 
 var uploads = {};
 cloudinary.config({
@@ -10,4 +7,7 @@ cloudinary.config({
   api_key: "615861227158362",
   api_secret: "gKraiT6MtAKmLKZHnF8tJAnkfDY"
 });
-console.log("** ** ** ** ** ** ** ** ** Uploads ** ** ** ** ** ** ** ** ** **");
+
+cloudinary.uploader().upload(new File("http://www.example.com/sample.jpg"),
+  ObjectUtils.asMap("public_id", "sample_woman"));
+
