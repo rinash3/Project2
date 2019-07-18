@@ -1,7 +1,10 @@
 INSERT INTO buddies
     (name, photo,password, email, age,country,language,gender,diet,description,
     past_travel,intrests,person,dest1,dest2,dest3,must_see,prefered_trip,createdAt,updatedAt)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3b6a2d56d13c3dabf9b65183969177bff79658af
 VALUES
     ("Bob", "Photo", "null", "test@gmail.com", "27", "us", "English", "Male", "vegan", "i love travel", "i have been to London and Paris",
         "nature,food", "funn person with same intrests", "New York", "", "", "Times Square", "planned", NOW(), NOW()),
