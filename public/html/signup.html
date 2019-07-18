@@ -15,6 +15,29 @@
     <link rel="stylesheet" href="../styles/styles.css">
     </link>
     <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+    <style>
+        .filepond--drop-label {
+            color: #4c4e53;
+        }
+
+        .filepond--label-action {
+            text-decoration-color: #babdc0;
+        }
+
+        .filepond--panel-root {
+            border-radius: 2em;
+            background-color: #edf0f4;
+            height: 1em;
+        }
+
+        .filepond--item-panel {
+            background-color: #595e68;
+        }
+
+        .filepond--drip-blob {
+            background-color: #7f8a9a;
+        }
+    </style>
 </head>
 
 <body>
@@ -53,10 +76,8 @@
         <div class="row top-space">
             <h2 class="blue">1. Upload your picture</h2>
         </div>
-        <div class="row">
-            imagebox
-            <input type="file" class="filepond" name="filepond" data-max-file-size="3MB">
-        </div>
+        
+        <input type="file" class="filepond" name="filepond" multiple data-max-file-size="3MB" data-max-files="3" />
 
         <form>
             <hr>
@@ -234,6 +255,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
+        const inputElement = document.querySelector('input[type="file"]');
+        const pond = FilePond.create(inputElement);
+
         $.fn.mutuallyExcludedCheckBoxes = function () {
             var $checkboxes = this.find("input[type=checkbox]");
 
