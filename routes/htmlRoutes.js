@@ -10,6 +10,15 @@ module.exports = function(app) {
       });
     });
   });
+  app.get("/signup", function(req, res) {
+    db.Buddies.findAll({}).then(function(dbExamples) {
+      res.render("example", {
+        msg: "Welcome!",
+        examples: dbExamples
+      });
+    });
+  });
+
 
   app.get("/signup", function(req, res) {
     db.Buddies.findAll({}).then(function() {
