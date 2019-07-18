@@ -7,6 +7,15 @@ module.exports = function(app) {
         res.sendFile(path.join(__dirname, "../public/html/index.html"));
       });
   });
+  app.get("/signup", function(req, res) {
+    db.Buddies.findAll({}).then(function(dbExamples) {
+      res.render("example", {
+        msg: "Welcome!",
+        examples: dbExamples
+      });
+    });
+  });
+
 
   app.get("/signup", function(req, res) {
     db.Buddies.findAll({}).then(function() {
