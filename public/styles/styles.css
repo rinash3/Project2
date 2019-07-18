@@ -1,11 +1,11 @@
 @font-face {
   font-family: GilroyBold;
-  src: url("../../font/TinkovGilroyExtrBold.otf");
+  src: url("../font/TinkovGilroyExtrBold.otf");
 }
 
 @font-face {
   font-family: GilroyLight;
-  src: url("../../font/TinkovGilroyLight.otf");
+  src: url("../font/TinkovGilroyLight.otf");
 }
 
 .list-group-item {
@@ -29,7 +29,7 @@ h1{
   color:#2273FB;
 }
 h2{
-  font-size:28px;
+  font-size:26px;
 }
 h3,p,label{
   font-size:21px;
@@ -99,7 +99,7 @@ span {
 }
 .mybtn{
   background: #2273FB;
-  border: 1px solid #979797;
+  border: none;
   border-radius: 13px;
   font-family: GilroyBold;
   font-size: 28px;
