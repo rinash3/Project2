@@ -1,4 +1,4 @@
-module.exports = function (sequelize, DataTypes) {
+module.exports = function(sequelize, DataTypes) {
   var Buddies = sequelize.define("Buddies", {
     photo: DataTypes.BLOB,
 
@@ -7,7 +7,7 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: false,
       validate: {
         notNull: {
-          msg: 'Please enter your name'
+          msg: "Please enter your name"
         }
       }
     },
@@ -16,7 +16,7 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: false,
       validate: {
         notNull: {
-          msg: 'Please enter your password'
+          msg: "Please enter your password"
         }
       }
     },
@@ -25,7 +25,7 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: false,
       validate: {
         notNull: {
-          msg: 'Please enter your age'
+          msg: "Please enter your age"
         }
       }
     },
@@ -37,7 +37,7 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: false,
       validate: {
         notNull: {
-          msg: 'Please enter your gender'
+          msg: "Please enter your gender"
         }
       }
     },
@@ -49,7 +49,7 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: false,
       validate: {
         notNull: {
-          msg: 'Please select one'
+          msg: "Please select one"
         }
       }
     },
@@ -59,7 +59,7 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: false,
       validate: {
         notNull: {
-          msg: 'Please select one'
+          msg: "Please select one"
         }
       }
     },
@@ -71,7 +71,7 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: false,
       validate: {
         notNull: {
-          msg: 'Please select one'
+          msg: "Please select one"
         }
       }
     }
