@@ -33,7 +33,7 @@ $(document).ready(function() {
     };
 
     console.log(newBuddy);
-    window.location.href = "/html/signup.html";
+    window.location.href = "/signup";
 
     // If we're updating a post run updatePost to update a post
     // Otherwise run submitPost to create a whole new post
@@ -71,7 +71,7 @@ $(document).ready(function() {
     });
   }
 
-  // Update a given post, bring user to the blog page when done
+  // Update a given buddy, bring buddy to the signup page when done
   function updateBuddy(Buddy) {
     $.ajax({
       method: "PUT",

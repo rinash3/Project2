@@ -62,7 +62,7 @@
         </div>
 
 
-        <form>
+        <form id="buddySignup">
             <hr>
             <h2 class="blue">2. Tell us about you</h2>
 
@@ -76,18 +76,18 @@
                 <label>
                     <h3>Where are you from?*<h3>
                 </label>
-                <input type="text" class="form-control" id="" placeholder="ex. New York, US">
+                <input type="text" class="form-control" id="location" placeholder="ex. New York, US">
             </div>
             <div class="form-group">
                 <label>
                     <h3>What languages do you speak?<h3>
                 </label>
-                <input type="text" class="form-control" id="" placeholder="ex. English, Hebrew">
+                <input type="text" class="form-control" id="langs" placeholder="ex. English, Hebrew">
             </div>
 
             <div class="form-group">
                 <h3>What's your gender?*<h3>
-                        <select class="form-control shorter-input">
+                        <select class="form-control shorter-input" id="buddyGender">
                             <option>select your gender</option>
                             <option>Female</option>
                             <option>Male</option>
@@ -97,7 +97,7 @@
 
             <div class="form-group">
                 <h3>Diet preference?<h3>
-                        <select class="form-control shorter-input">
+                        <select class="form-control shorter-input" id="buddyDiet">
                             <option>select your diet</option>
                             <option>omnivore</option>
                             <option>Vegetarian</option>
@@ -121,7 +121,7 @@
                 <label for="aboutMe">
                     <h3>Any past travel experience?</h3>
                 </label>
-                <textarea class="form-control" id="aboutMe" rows="3"
+                <textarea class="form-control" id="travelExp" rows="3"
                     placeholder="ex. I have been to Mexico, Iceland, Maldives, Japan and most of countries in Latin American. I usually travel for a month an deeply experience the culture."></textarea>
             </div>
 
@@ -132,7 +132,7 @@
 
                 <h3>Tell us about your interests in a trip*</h3>
                 <div class="pretty p-default p-fill">
-                    <input type="checkbox" />
+                    <input type="checkbox" id="attractions"/>
                     <div class="state p-primary">
                         <label class="bold">attractions</label>
                     </div>
@@ -140,34 +140,34 @@
 
 
                 <div class="pretty p-default p-fill">
-                    <input type="checkbox" />
+                    <input type="checkbox" id="museums"/>
                     <div class="state p-primary">
                         <label class="bold">museums</label>
                     </div>
                 </div>
 
                 <div class="pretty p-default p-fill">
-                    <input type="checkbox" />
+                    <input type="checkbox" id="culture"/>
                     <div class="state p-primary">
                         <label class="bold">culture</label>
                     </div>
                 </div>
                 <br>
                 <div class="pretty p-default p-fill">
-                    <input type="checkbox" />
+                    <input type="checkbox" id="nature"/>
                     <div class="state p-primary">
                         <label class="bold">nature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                     </div>
                 </div>
                 <div class="pretty p-default p-fill">
-                    <input type="checkbox" />
+                    <input type="checkbox" id="food"/>
                     <div class="state p-primary">
                         <label class="bold">food&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                     </div>
                 </div>
 
                 <div class="pretty p-default p-fill">
-                    <input type="checkbox" />
+                    <input type="checkbox" id="other"/>
                     <div class="state p-primary">
                         <label class="bold">other</label>
                     </div>
@@ -182,14 +182,14 @@
                 <h3>In general how do you prefer your trip*</h3>
                 <div class="travelerType">
                     <div class="pretty p-default p-fill">
-                        <input type="checkbox" />
+                        <input type="checkbox" id="spontaneous"/>
                         <div class="state p-primary">
                             <label
                                 class="bold">spontaneous&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                         </div>
                     </div>
                     <div class="pretty p-default p-fill">
-                        <input type="checkbox" />
+                        <input type="checkbox" id="planned"/>
                         <div class="state p-primary">
                             <label class="bold">well planned</label>
                         </div>
@@ -203,12 +203,12 @@
                     <h3>Your top 3 destinations?*<span class="black">( at least one is required)</span>
                         <h3>
 
-                            <input type="text" class="margin-top-10 form-control" id=""
+                            <input type="text" class="margin-top-10 form-control" id="dest1"
                                 placeholder="ex. Bogota, Colombia">
 
-                            <input type="text" class="margin-top-10 form-control" id="" placeholder="ex. Paris, France">
+                            <input type="text" class="margin-top-10 form-control" id="dest2" placeholder="ex. Paris, France">
 
-                            <input type="text" class="margin-top-10 form-control" id=""
+                            <input type="text" class="margin-top-10 form-control" id="dest3"
                                 placeholder="ex. Tel-aviv, Isreal">
             </div>
 
@@ -218,15 +218,15 @@
                 <label for="aboutMe">
                     <h3>Whom are you looking for ?</h3>
                 </label>
-                <textarea class="form-control" id="aboutMe" rows="3"
+                <textarea class="form-control" id="lookingFor" rows="3"
                     placeholder="ex. I am looking for people to share my hotel room and drink outside at night"></textarea>
             </div>
 
             <div class="form-group">
                 <label for="aboutMe">
-                    <h3>Any must-check when you travel?</h3>
+                    <h3>Any must-sees when you travel?</h3>
                 </label>
-                <textarea class="form-control" id="aboutMe" rows="3"
+                <textarea class="form-control" id="mustSee" rows="3"
                     placeholder="ex. art gallery, coffee shops"></textarea>
             </div>
             <br>
@@ -259,7 +259,7 @@
     </script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="../js/upload.js"></script>
-
+    <script src="/js/signup.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
