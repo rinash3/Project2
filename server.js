@@ -5,7 +5,7 @@ var exphbs = require("express-handlebars");
 var db = require("./models");
 
 var app = express();
-var PORT = 4000;
+var PORT = 3000;
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));
