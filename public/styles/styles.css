@@ -131,7 +131,6 @@ span {
   background: #2273FB;
   z-index:10;
 }
-<<<<<<< HEAD
 .margin-left-5em{
   margin-left: 5em;
 }
@@ -184,28 +183,4 @@ span {
   left: 0;
   top: 0;
   opacity: 0;
-=======
-
-.margin-left-5em {
-  margin-left: 5em;
-}
-.my-card-body {
-  width: 100%;
-  z-index: 2;
-  margin-top: 16em;
-  height: 9em;
-  padding-left: 1em;
-  padding-top: 1em;
-  background: white;
-}
-.card {
-  width: 26em;
-  height: 26em;
-  margin-right: 2em;
-  margin-top: 2em;
-  box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 14px 0px;
-}
-.noopct {
-  opacity: 1;
->>>>>>> aa611259b06549ff9e62c68a96928777d53c13c7
 }
