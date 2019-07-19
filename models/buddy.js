@@ -1,79 +1,76 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
   var Buddies = sequelize.define("Buddies", {
-    photo: DataTypes.BLOB,
-
+    photo: {
+      type: DataTypes.TEXT,
+      defaultValue: "upload photo"
+    },
     name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        notNull: {
-          msg: "Please enter your name"
-        }
-      }
+      type: DataTypes.TEXT,
+      defaultValue: "your name"
     },
     password: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        notNull: {
-          msg: "Please enter your password"
-        }
-      }
+      type: DataTypes.TEXT,
+      defaultValue: "your pw"
     },
     age: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        notNull: {
-          msg: "Please enter your age"
-        }
-      }
+      defaultValue: 25
     },
-    email: DataTypes.STRING,
-    country: DataTypes.STRING,
-    language: DataTypes.STRING,
+    email: {
+      type: DataTypes.TEXT,
+      defaultValue: "your email"
+    },
+    country: {
+      type: DataTypes.TEXT,
+      defaultValue: "Country"
+    },
+    language: {
+      type: DataTypes.TEXT,
+      defaultValue: "ENG"
+    },
     gender: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        notNull: {
-          msg: "Please enter your gender"
-        }
-      }
+      type: DataTypes.TEXT,
+      defaultValue: "your gender"
     },
-    diet: DataTypes.STRING,
-    description: DataTypes.TEXT,
-    past_travel: DataTypes.TEXT,
+    diet: {
+      type: DataTypes.TEXT,
+      defaultValue: "your diet"
+    },
+    description: {
+      type: DataTypes.TEXT,
+      defaultValue: "your desc"
+    },
+    past_travel: {
+      type: DataTypes.TEXT,
+      defaultValue: "past travel"
+    },
     intrests: {
       type: DataTypes.TEXT,
-      allowNull: false,
-      validate: {
-        notNull: {
-          msg: "Please select one"
-        }
-      }
+      defaultValue: "interests"
     },
-    person: DataTypes.TEXT,
+    person: {
+      type: DataTypes.TEXT,
+      defaultValue: "person"
+    },
     dest1: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        notNull: {
-          msg: "Please select one"
-        }
-      }
+      type: DataTypes.TEXT,
+      defaultValue: "dest1"
     },
-    dest2: DataTypes.STRING,
-    dest3: DataTypes.STRING,
-    must_see: DataTypes.TEXT,
+    dest2: {
+      type: DataTypes.TEXT,
+      defaultValue: "dest2"
+    },
+    dest3: {
+      type: DataTypes.TEXT,
+      defaultValue: "dest3"
+    },
+    must_see: {
+      type: DataTypes.TEXT,
+      defaultValue: "mustsee"
+    },
     prefered_trip: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        notNull: {
-          msg: "Please select one"
-        }
-      }
+      type: DataTypes.TEXT,
+      defaultValue: "preftrip"
     }
   });
   return Buddies;
