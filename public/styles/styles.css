@@ -218,7 +218,16 @@ span {
   margin-left: -6vw;
   margin-bottom: 2em;
 }
+<<<<<<< HEAD
 .card:hover{
   border:solid;
   color:#2273FB;
 }
+=======
+
+.card:hover{
+  border:solid;
+  color:#2273FB;
+}
+
+>>>>>>> 380bfcb4e9cf1c23bd4fb09fa5b1d7bce3176736

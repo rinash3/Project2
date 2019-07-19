@@ -1,9 +1,17 @@
 module.exports = function (sequelize, DataTypes) {
   var Buddies = sequelize.define("Buddies", {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 380bfcb4e9cf1c23bd4fb09fa5b1d7bce3176736
     photo: {
       type: DataTypes.TEXT,
       defaultValue: "upload photo"
     },
+<<<<<<< HEAD
+=======
+
+>>>>>>> 380bfcb4e9cf1c23bd4fb09fa5b1d7bce3176736
     name: {
       type: DataTypes.TEXT,
       defaultValue: "your name"
