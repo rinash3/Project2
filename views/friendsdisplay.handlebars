@@ -1,0 +1,23 @@
+  <div class="top-bar">
+    <img class="logo" src="../icons/logo.png">
+
+
+<div class="top-space"></div>
+    <div class="row margin-left-5em scroll">
+
+        {{#each buddy}}
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="my-card-body">
+                <h2>{{name}},{{age}} <span class="big-font margin-left-5em blue noopct">{{prefered_trip}}</span>
+                </h2>
+
+                <p>interest: <span class="regular-font bold noopct">{{intrests}}</span>
+                <br>top destinations: <span class="bold regular-font noopct">{{dest1}}|{{dest2}}|{{dest3}}</span>
+                </p>
+            </div>
+
+        </div>
+        {{/each}}
+
+    </div>
