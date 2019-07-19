@@ -158,3 +158,29 @@ span {
 .noopct{
   opacity:1;
 }
+
+.upload-btn-wrapper {
+  margin-top:2em;
+  margin-left:5em;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid #2273FB;
+  color: white;
+  background-color: #2273FB;
+  padding: 8px 50px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
