@@ -7,15 +7,14 @@ module.exports = function (app) {
       res.sendFile(path.join(__dirname, "../public/html/index.html"));
     });
   });
-  app.get("/signup", function(req, res) {
-    db.Buddies.findAll({}).then(function(dbExamples) {
+  app.get("/signup", function (req, res) {
+    db.Buddies.findAll({}).then(function (dbExamples) {
       res.render("example", {
         msg: "Welcome!",
         examples: dbExamples
       });
     });
   });
-
 
   app.get("/signup", function (req, res) {
     db.Buddies.findAll({}).then(function () {
@@ -28,20 +27,20 @@ module.exports = function (app) {
         buddy: result
       });
     });
-  });
-  // Load example page and pass in an example by id
-  // app.get("/example/:id", function(req, res) {
-  //   db.Buddies.findOne({ where: { id: req.params.id } }).then(function(
-  //     dbExample
-  //   ) {
-  //     res.render("example", {
-  //       example: dbExample
-  //     });
-  //   });
-  // });
-
-  // Render 404 page for any unmatched routes
-  app.get("*", function (req, res) {
-    res.render("404");
+    app.get("/profile/", function (req, res) {
+      db.Buddies.findOne({
+        where: {
+          id: req.params.id
+        }
+      }).then(function (result) {
+        res.render("personalPage", {
+          buddy: result
+        });
+      });
+    });
+    // Render 404 page for any unmatched routes
+    app.get("*", function (req, res) {
+      res.render("404");
+    });
   });
 };
