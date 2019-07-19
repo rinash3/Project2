@@ -1,6 +1,6 @@
 INSERT INTO buddiesDB
-    (name, photo,password, email, age,country,language,gender,diet,description,
-    past_travel,intrests,person,dest1,dest2,dest3,must_see,prefered_trip,createdAt,updatedAt)
+    (name, photo, password, email, age, country,language,gender,diet,description,
+    past_travel,intrests,dest1,dest2,dest3,person,must_see,prefered_trip,createdAt,updatedAt)
 VALUES
     ("Bob", "https://ak7.picdn.net/shutterstock/videos/2290997/thumb/1.jpg", "null", "test@gmail.com", "27", "us", "English", "Male", "vegan", "i love travel", "i have been to London and Paris",
         "nature,food", "funn person with same intrests", "New York", "Bogota", "Shanghai", "Times Square", "planned", NOW(), NOW()),
