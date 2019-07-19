@@ -218,7 +218,9 @@ span {
   margin-left: -6vw;
   margin-bottom: 2em;
 }
+
 .card:hover{
   border:solid;
   color:#2273FB;
 }
+
