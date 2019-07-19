@@ -1,8 +1,14 @@
 $(document).ready(function () {
   $(".card").on("click", function () {
 
-    var idValue=$(this).attr("value");
-    window.location.href = "/profile/"+idValue;
+    var idValue = $(this).attr("value");
+    window.location.href = "/profile/" + idValue;
 
   })
+
+  $(".goBack").on("click", function () {
+    window.location.href = "/display";
+
+  })
+
 });
