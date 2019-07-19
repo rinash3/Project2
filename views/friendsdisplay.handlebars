@@ -1,19 +1,22 @@
 <div class="container">
     <div class="row">
         <div class="col-6 md">
+            {{#each buddy}}
             <div class="card">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Name</h5>
                     <p class="card-text">Some quick example text to build on the card title</p>
-                    <p><strong>ID</strong>: {{db.Buddies.id}}</p>
-                    <p><strong>Text</strong>: {{result.language}}</p>
-                    <p><strong>Description:</strong> {{result.description}}</p>
-                    <a href="/">← Back To Home</a>
+                    <p><strong>ID</strong>: {{name}}</p>
+                    <p><strong>Text</strong>: {{language}}</p>
+                    <p><strong>Description:</strong> {{description}}</p>
+                    <a href="/">View Profile</a>
                 </div>
             </div>
+            {{/each}}
         </div>
         <div class="col-6 md">
+            {{#each buddy}}
             <div class="card">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
@@ -22,9 +25,10 @@
                     <p><strong>ID</strong>: {{example.id}}</p>
                     <p><strong>Text</strong>: {{example.text}}</p>
                     <p><strong>Description:</strong> {{example.description}}</p>
-                    <a href="/">← Back To Home</a>
+                    <a href="/profile">View Profile</a>
                 </div>
             </div>
+            {{/each}}
         </div>
     </div>
 </div>
