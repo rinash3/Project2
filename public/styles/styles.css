@@ -28,10 +28,10 @@ h1{
   font-size:40px;
   color:#2273FB;
 }
-h2{
+h2,.big-font{
   font-size:26px;
 }
-h3,p,label{
+h3,p,label,.regular-font{
   font-size:21px;
 }
 hr{
@@ -130,4 +130,27 @@ span {
   height:4em;
   background: #2273FB;
   z-index:10;
+}
+
+.margin-left-5em {
+  margin-left: 5em;
+}
+.my-card-body {
+  width: 100%;
+  z-index: 2;
+  margin-top: 16em;
+  height: 9em;
+  padding-left: 1em;
+  padding-top: 1em;
+  background: white;
+}
+.card {
+  width: 26em;
+  height: 26em;
+  margin-right: 2em;
+  margin-top: 2em;
+  box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 14px 0px;
+}
+.noopct {
+  opacity: 1;
 }

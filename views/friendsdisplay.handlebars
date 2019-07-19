@@ -1,30 +1,21 @@
-<div class="container">
+<div class="top-bar"></div>
+<img class="logo" src="../icons/logo.png">
+
+<div class="row margin-left-5em scroll top-space">
     <div class="row">
-        <div class="col-6 md">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Name</h5>
-                    <p class="card-text">Some quick example text to build on the card title</p>
-                    <p><strong>ID</strong>: {{db.Buddies.id}}</p>
-                    <p><strong>Text</strong>: {{result.language}}</p>
-                    <p><strong>Description:</strong> {{result.description}}</p>
-                    <a href="/">← Back To Home</a>
-                </div>
+
+        {{#each buddy}}
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="my-card-body">
+                <h2>{{name}},{{age}}<span class="big-font margin-left-5em blue noopct">{{prefered_trip}}</span></h2>
+                <p>interests:<span class="regular-font bold noopct">{{interests}}</span>
+                    <br>
+                    top destination:<span class="bold regular-font noopct">{{dest1}}|{{dest2}}|{{dest3}}</span>
+                </p>
             </div>
+
         </div>
-        <div class="col-6 md">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title</p>
-                    <p><strong>ID</strong>: {{example.id}}</p>
-                    <p><strong>Text</strong>: {{example.text}}</p>
-                    <p><strong>Description:</strong> {{example.description}}</p>
-                    <a href="/">← Back To Home</a>
-                </div>
-            </div>
-        </div>
+        {{/each}}
     </div>
 </div>
