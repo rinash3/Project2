@@ -1,6 +1,7 @@
 module.exports = function(sequelize, DataTypes) {
   var Buddies = sequelize.define("Buddies", {
-    photo: DataTypes.BLOB,
+    photo: DataTypes.STRING,
+
 
     name: {
       type: DataTypes.STRING,
