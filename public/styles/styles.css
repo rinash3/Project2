@@ -131,26 +131,59 @@ span {
   background: #2273FB;
   z-index:10;
 }
-
-.margin-left-5em {
+.margin-left-5em{
   margin-left: 5em;
 }
-.my-card-body {
-  width: 100%;
-  z-index: 2;
-  margin-top: 16em;
-  height: 9em;
-  padding-left: 1em;
-  padding-top: 1em;
-  background: white;
+
+.card{
+  width:26em;
+  height:26em;
+  margin-right:2em;
+  margin-top:2em;
+  box-shadow: 0 2px 14px 0 rgba(0,0,0,0.39);
 }
-.card {
-  width: 26em;
-  height: 26em;
-  margin-right: 2em;
-  margin-top: 2em;
-  box-shadow: rgba(0, 0, 0, 0.39) 0px 2px 14px 0px;
+.my-card-body{
+  width:100%;
+  background:white;
+  z-index:2;
+  margin-top:16em;
+  height:9em;
+  padding-left:1em;
+  padding-top:1em;
 }
-.noopct {
-  opacity: 1;
+
+.scroll{
+  overflow: scroll;
+}
+.noopct{
+  opacity:1;
+}
+
+.upload-btn-wrapper {
+  margin-top:2em;
+  margin-left:5em;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn {
+  border: 2px solid #2273FB;
+  color: white;
+  background-color: #2273FB;
+  padding: 8px 50px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
 }
