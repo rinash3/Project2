@@ -27,7 +27,7 @@ module.exports = function (app) {
         buddy: result
       });
     });
-    app.get("/profile/", function (req, res) {
+    app.get("/profile/:id", function (req, res) {
       db.Buddies.findOne({
         where: {
           id: req.params.id
