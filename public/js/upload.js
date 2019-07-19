@@ -18,6 +18,7 @@ fileUpload.addEventListener("change", function (event) {
     },
     data: formData
   }).then(function (result) {
+
     imagePreview.src=result.data.secure_url;
   }).catch(function (err) {
     console.log(err);

@@ -1,3 +1,189 @@
+@font-face {
+  font-family: GilroyBold;
+  src: url("../font/TinkovGilroyExtrBold.otf");
+}
+
+@font-face {
+  font-family: GilroyLight;
+  src: url("../font/TinkovGilroyLight.otf");
+}
+
 .list-group-item {
   line-height: 2.5;
+}
+
+h1,h2,em,.bold{
+  font-family: GilroyBold;
+}
+
+p,h3,label{
+  font-family:GilroyLight;
+  font-weight: bold;
+  color: #000000;
+  letter-spacing: -0.28px;
+  line-height: 30px;
+}
+
+h1{
+  font-size:40px;
+  color:#2273FB;
+}
+h2,.big-font{
+  font-size:26px;
+}
+h3,p,label,.regular-font{
+  font-size:21px;
+}
+hr{
+    display: block;
+    margin-top:4em;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+
+}
+label{
+  width: 100%;
+}
+
+.form-group,.mybtn {
+  margin-left:10%;
+  width:60%;
+}
+
+.black{
+  color:black;
+}
+.blue{
+  color:#2273FB;
+}
+
+.pretty .state label{
+  margin-top: -8px;
+  z-index:1;
+}
+
+.pretty .state label:before {
+  border-color: black;
+  z-index:1;
+ 
+}
+
+.pretty.p-default input:checked~.state label:after {
+  background-color: #2273FB!important;
+  z-index:1;
+}
+
+.pretty {
+  z-index: 100;
+  margin-bottom: 2em;
+  z-index:1;
+}
+
+span {
+  font-size: 11px;
+  opacity: .5;
+  padding: 0 40px 0 5px;
+}
+
+.shorter-input{
+  width:60%;
+}
+
+.margin-top-10{
+  margin-top: 10px;
+}
+.mybtn{
+  background: #2273FB;
+  border: none;
+  border-radius: 13px;
+  font-family: GilroyBold;
+  font-size: 28px;
+  color: #FFFFFF;
+  letter-spacing: -0.22px;
+  text-align: center;
+}
+.bottom-space{
+  margin-bottom: 5em;
+}
+.top-space{
+  margin-top: 7em;
+}
+.steps-intro{
+  width:100%;
+}
+.logo{
+  width:10vw;
+  position:absolute;
+  top:1em;
+  left:1em;
+}
+.top-bar{
+  position:fixed;
+  width:100%;
+  left:0;
+  top:0;
+  height:4em;
+  background: #2273FB;
+  z-index:10;
+}
+.margin-left-5em{
+  margin-left: 5em;
+}
+
+.card{
+  width:26em;
+  height:26em;
+  margin-right:2em;
+  margin-top:2em;
+  box-shadow: 0 2px 14px 0 rgba(0,0,0,0.39);
+}
+.my-card-body{
+  width:100%;
+  background:white;
+  z-index:2;
+  margin-top:16em;
+  height:9em;
+  padding-left:1em;
+  padding-top:1em;
+}
+
+.scroll{
+  overflow: scroll;
+}
+.noopct{
+  opacity:1;
+}
+
+.upload-btn-wrapper {
+  margin-top:2em;
+  margin-left:5em;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn {
+  border: 2px solid #2273FB;
+  color: white;
+  background-color: #2273FB;
+  padding: 8px 50px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
 }

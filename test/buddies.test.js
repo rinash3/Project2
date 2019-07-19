@@ -10,6 +10,7 @@ chai.use(chaiHttp);
 var request;
 
 describe("GET /api/buddies", function() {
+
   // Before each test begins, create a new request server for testing
   // & delete all examples from the db
   beforeEach(function() {
@@ -24,7 +25,9 @@ describe("GET /api/buddies", function() {
       { text: "Second Example", description: "Second Description" }
     ]).then(function() {
       // Request the route that returns all examples
+
       request.get("/api/buddies").end(function(err, res) {
+
         var responseStatus = res.status;
         var responseBody = res.body;
 
@@ -37,6 +40,7 @@ describe("GET /api/buddies", function() {
         expect(responseBody)
           .to.be.an("array")
           .that.has.lengthOf(5);
+
 
         expect(responseBody[0])
           .to.be.an("object")
