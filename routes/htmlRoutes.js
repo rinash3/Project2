@@ -22,6 +22,18 @@ module.exports = function (app) {
       });
     });
   });
+  
+    app.get("/profile/:id", function (req, res) {
+    db.Buddies.findAll({
+      where: {
+        id: req.params.id
+      }
+    }).then(function (result) {
+      res.render("personalpage",{theBuddy:result});
+      console.log({theBuddy:result});
+    });
+  });
+
   // Load example page and pass in an example by id
   // app.get("/example/:id", function(req, res) {
   //   db.Buddies.findOne({ where: { id: req.params.id } }).then(function(
