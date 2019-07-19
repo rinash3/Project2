@@ -4,6 +4,7 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.TEXT,
       defaultValue: "upload photo"
     },
+
     name: {
       type: DataTypes.TEXT,
       defaultValue: "your name"
