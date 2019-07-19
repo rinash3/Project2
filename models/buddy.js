@@ -1,15 +1,11 @@
 module.exports = function (sequelize, DataTypes) {
   var Buddies = sequelize.define("Buddies", {
-<<<<<<< HEAD
+
     photo: {
       type: DataTypes.TEXT,
       defaultValue: "upload photo"
     },
-=======
-    photo: DataTypes.STRING,
 
-
->>>>>>> 2337469afb2e0d5675798a7bb423474a55f3af50
     name: {
       type: DataTypes.TEXT,
       defaultValue: "your name"
