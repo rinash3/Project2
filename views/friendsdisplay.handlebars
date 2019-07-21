@@ -1,0 +1,35 @@
+
+<div class="top-bar">
+    <img class="logo" src="../icons/logo.png">
+    </div>
+
+    <div class="top-space"></div>
+ <a id="goToMyProfile" class="profile-img"><img id="profile-img" class="img-control" src="{{photoURL}}"></a>
+
+    <div class="row margin-left-5em scroll">
+
+        {{#each buddy}}
+
+        <div value="{{id}}" class="card">
+
+
+            <div class="my-card-img">
+                <img src={{photo}} class="card-img-top" alt="...">
+            </div>
+
+            <div class="my-card-body">
+                <h2>{{name}},{{age}} <span class="big-font margin-left-5em blue noopct">{{prefered_trip}}</span>
+                </h2>
+
+                <p>interest: <span class="regular-font bold noopct">{{intrests}}</span>
+
+                    <br>top destinations: <span class="bold regular-font noopct">{{dest1}}|{{dest2}}|{{dest3}}</span>
+
+                </p>
+            </div>
+
+        </div>
+        {{/each}}
+
+    </div>
+
