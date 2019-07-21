@@ -1,7 +1,6 @@
 module.exports = function (sequelize, DataTypes) {
   var Buddies = sequelize.define("Buddies", {
 
-
     photo: {
       type: DataTypes.TEXT,
       defaultValue: "upload photo"
@@ -73,7 +72,7 @@ module.exports = function (sequelize, DataTypes) {
     },
     prefered_trip: {
       type: DataTypes.TEXT,
-      defaultValue: "preftrip"
+      defaultValue: "planned"
     }
   });
   return Buddies;
