@@ -1,11 +1,7 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
     "password": "Ganbei2233",
-=======
-    "password": "Muneem127**",
->>>>>>> 8432d94292a5263c1b140854565d9342db4d922e
     "database": "buddies",
     "host": "localhost",
     "port": 3306,
