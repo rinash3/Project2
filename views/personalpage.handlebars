@@ -1,0 +1,58 @@
+<div class="top-bar">
+    <img class="logo" src="../icons/logo.png">
+</div>
+<a id="goToMyProfile" class="profile-img"><img id="profile-img" class="img-control" src={{photoURL2}}></a>
+
+<div class="top-space"></div>
+<div class="row margin-left-5em scroll">
+
+    <div class="container">
+        <div id="contactForm" status="close">
+            <div class="close">X</div>
+            <input class="width-80" placeholder="Put your title here" />
+            <br>
+            <textarea class="width-80 height-40" placeholder="Ask for a meet up or a video chat"></textarea>
+            <br>
+            <button id="sendInfo" type="submit" class="mybtn bottom-space">Send</button>
+        </div>
+        <h3 class="goBack" class="blue">
+            < view others</h3> <div class="row">
+                <div class="LeftHalf">
+                    <div class="picture">
+                        <img class="picture" src={{photo}}>
+                    </div>
+                    <h3 class="bold">Self Introduction</h3>
+                    <p>{{description}}</p>
+                    <h3 class="bold">Past Travel Experience</h3>
+                    <p>{{past_travel}}</p>
+                    <h3 class="bold">What kind of people I'm looking for</h3>
+                    <p>{{person}}</p>
+                </div>
+                <div class="rightHalf">
+                    <h2>{{name}},{{age}}</h2>
+                    <h2 class="blue">{{prefered_trip}}</h2>
+
+                    <p>interest: <span class="regular-font bold noopct">{{intrests}}</span>
+                        <br>top destinations: <span
+                            class="bold regular-font noopct">{{dest1}}|{{dest2}}|{{dest3}}</span>
+                    </p>
+
+                    <br>
+                    <p>From:{{country}}
+                        <br>
+                        Diet:{{diet}}
+                        <br>
+                        Gender:{{gender}}
+                        <br>
+                        Language:{{language}}
+                        <br>
+                    </p>
+
+                    <br>
+                    <p>Must Checks: <span class="bold blue noopct regular-font">{{must_see}}</span></p>
+                    <br>
+                    <button id="contactInfo" type="submit" class="mybtn bottom-space">Contact</button>
+                </div>
+    </div>
+
+</div>

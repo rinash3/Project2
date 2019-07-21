@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flocker sign-up</title>
+    <link href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" rel="stylesheet">
+    </link>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    </link>
+   
+    <style>
+        body {
+            background-image: url("../icons/bgimg.png");
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            height: 100%;
+            position: fixed;
+            background-color: white;
+            z-index: 1;
+
+        }
+
+        #sign-up-page {
+            display: none;
+        }
+
+        /* #Welcomepage{display:none;} */
+        .righthalf-index {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            background: white;
+            width: 42.5%;
+            padding-top: 6em;
+        }
+
+        .lefthalf-index {
+            position: fixed;
+            top: 0;
+            left: 8%;
+            height: 100%;
+            width: 40%;
+            padding-top: 12em;
+        }
+
+        .h1-margin-left {
+            margin-left: 1em;
+        }
+
+        .left-space-index {
+            margin-left: 6em;
+            margin-top: .5em;
+        }
+        .left-margin-for-form{
+            margin-left:20vw;
+        
+        }
+    </style>
+     <link rel="stylesheet" href="../styles/styles.css">
+    </link>
+</head>
+
+<body>
+    <div id="Welcomepage">
+        <div class="lefthalf-index ">
+            <h2 id="header"> Tip of the day</h2>
+            <p class="motto">
+                Do you know those who fill in more information find their partner 50% faster than the majority? 
+                Elaborate on you descriptions, let people know you.
+            </p>
+        </div>
+
+
+        <div class="righthalf-index ">
+
+            <h1 class="h1-margin-left">Welcome Back :) </h1>
+            <br>
+            <form id="welcomeSignup">
+  
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                        placeholder="example@email.com">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group bottom-space">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+
+                <br>
+                <button id="theSignInPage" type="submit" class="mybtn bottom-space">Sign in</button>
+
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+
+</body>
+
+</html>
