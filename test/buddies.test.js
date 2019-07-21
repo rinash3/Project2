@@ -9,50 +9,54 @@ chai.use(chaiHttp);
 
 var request;
 
-describe("GET /api/buddies", function() {
+describe("POST /api/buddies", function () {
 
   // Before each test begins, create a new request server for testing
   // & delete all examples from the db
-  beforeEach(function() {
+  beforeEach(function () {
     request = chai.request(server);
-    return db.sequelize.sync({ force: true });
+    return db.sequelize.sync({
+      force: true
+    });
   });
 
-  it("should find all examples", function(done) {
+  it("should add a new person to buddies list", function (done) {
     // Add some examples to the db to test with
-    db.Example.bulkCreate([
-      { text: "First Example", description: "First Description" },
-      { text: "Second Example", description: "Second Description" }
-    ]).then(function() {
-      // Request the route that returns all examples
+    // db.Example.bulkCreate([
+    //   { text: "First Example", description: "First Description" },
+    //   { text: "Second Example", description: "Second Description" }
+    // ]).then(function() {
+    //   // Request the route that returns all examples
 
-      request.get("/api/buddies").end(function(err, res) {
+    request.get("/api/buddies").end(function (err, res) {
 
-        var responseStatus = res.status;
-        var responseBody = res.body;
+      var responseStatus = res.status;
+      var responseBody = res.body;
 
-        // Run assertions on the response
+      // Run assertions on the response
 
-        expect(err).to.be.null;
+      expect(err).to.be.null;
 
-        expect(responseStatus).to.equal(200);
+      expect(responseStatus).to.equal(200);
 
-        expect(responseBody)
-          .to.be.an("array")
-          .that.has.lengthOf(5);
+      // expect(responseBody)
+      //   .to.be.an("array")
+      //   .that.has.lengthOf(14);
 
 
-        expect(responseBody[0])
-          .to.be.an("object")
-          .that.includes({ text: "First Example", description: "First Description" });
+      expect(responseBody[0])
+        .to.be.an("object")
+        .that.includes({
+          name: "name",
+          email: "@"
+        });
 
-        expect(responseBody[1])
-          .to.be.an("object")
-          .that.includes({ text: "Second Example", description: "Second Description" });
+      // expect(responseBody[1])
+      //   .to.be.an("object")
+      //   .that.includes({ text: "Second Example", description: "Second Description" });
 
-        // The `done` function is used to end any asynchronous tests
-        done();
-      });
+      // The `done` function is used to end any asynchronous tests
+      done();
     });
   });
 });
