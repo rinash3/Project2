@@ -1,7 +1,7 @@
 var imagePreview = document.getElementById("img-preview");
 var fileUpload = document.getElementById("file-upload");
-var URL_CLOUDINARY = "https://api.cloudinary.com/v1_1/hyidentz4/upload"
-var URL_CLOUDINARY_UPLOAD_PRESET = "zhqucmfe"
+var URL_CLOUDINARY = "https://api.cloudinary.com/v1_1/hessy9g4k/upload"
+var URL_CLOUDINARY_UPLOAD_PRESET = "aly60o1r"
 
 
 fileUpload.addEventListener("change", function (event) {
