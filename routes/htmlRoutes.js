@@ -9,13 +9,18 @@ module.exports = function (app) {
   });
 
   app.get("/display/:me", function (req, res) {
-    db.Buddies.findAll({}).then(function (result) {
+    db.Buddies.findAll({
+      // where:{
+      //   id:req.params.me
+      // }
+    }).then(function (result) {
       res.render("friendsdisplay", {
         buddy: result,
-        photoURL: result[req.params.me - 1].photo
+        photoURL: result[result.length-1].photo
       });
     });
   });
+
   app.get("/signin", function (req, res) {
     console.log(req.body)
     db.Buddies.findAll({

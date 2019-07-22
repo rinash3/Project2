@@ -1,4 +1,7 @@
-INSERT INTO buddies
+
+USE  f2zmgxhrionupwrp;
+
+INSERT INTO  buddies
     (name, photo, password, email, age, country,language,gender,diet,description,
     past_travel,intrests,dest1,dest2,dest3,person,must_see,prefered_trip,createdAt,updatedAt)
 VALUES
@@ -16,3 +19,5 @@ VALUES
             ("Luka", "http://cdn.24.co.za/files/Cms/General/d/417/86f9934b104648fb9ff31c09057c2ea5.jpg", "null", "test2@gmail.com", 22, "London", "English,Spanish", "
     female", "Kosher", "i love travel", "i have been to London and Paris",
         "culture,food", "funn person with same intrests", "Rekjavik", "Paris", "London", "Times Square", "planned", NOW(), NOW());
+
+SELECT *FROM  f2zmgxhrionupwrp;
