@@ -16,11 +16,14 @@ module.exports = function (app) {
       });
     });
   });
-  app.get("/signin", function (req, res) {
-    console.log(req.body)
+  
+  app.get("/display/:me", function (req, res) {
     db.Buddies.findAll({
     }).then(function (result) {
-      res.sendFile(path.join(__dirname, "../public/html/signin.html"));
+      res.render("friendsdisplay", {
+        buddy: result,
+        photoURL: result[result.length-1].photo
+      });
     });
   });
 
