@@ -8,14 +8,6 @@ module.exports = function (app) {
     });
   });
 
-  app.get("/display/:me", function (req, res) {
-    db.Buddies.findAll({}).then(function (result) {
-      res.render("friendsdisplay", {
-        buddy: result,
-        photoURL: result[req.params.me - 1].photo
-      });
-    });
-  });
   
   app.get("/display/:me", function (req, res) {
     db.Buddies.findAll({
@@ -26,7 +18,15 @@ module.exports = function (app) {
       });
     });
   });
-
+  
+ app.get("/signin", function (req, res) {
+    console.log(req.body)
+    db.Buddies.findAll({
+    }).then(function (result) {
+      res.sendFile(path.join(__dirname, "../public/html/signin.html"));
+    });
+  });
+  
   app.get("/profile/:id/:me", function (req, res) {
     db.Buddies.findAll({
       where: {
