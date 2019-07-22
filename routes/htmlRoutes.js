@@ -7,15 +7,6 @@ module.exports = function (app) {
       res.sendFile(path.join(__dirname, "../public/html/signup.html"));
     });
   });
-
-  app.get("/display/:me", function (req, res) {
-    db.Buddies.findAll({}).then(function (result) {
-      res.render("friendsdisplay", {
-        buddy: result,
-        photoURL: result[req.params.me - 1].photo
-      });
-    });
-  });
   
   app.get("/display/:me", function (req, res) {
     db.Buddies.findAll({
