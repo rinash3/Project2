@@ -80,7 +80,6 @@ module.exports = function (app) {
           console.log("you are small");
         }
       }
-      myjson.unshift(result[result.length - 1])
       res.json(myjson);
     });
   });
